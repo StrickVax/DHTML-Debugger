@@ -7,13 +7,29 @@
 
 <body>
     <h1>HTML + Javascript Debugger</h1>
-    <div id = "container">
-        <div id = "code-editor">
+    <div id="container">
+        <!-- Editor -->
+        <div id="code-editor">
             <h2>Code Editor</h2>
-            <textarea id = "code-input" rows="20" cols="50"></textarea>
+            <textarea id="code-input" rows="20" cols="50"></textarea>
         </div>
 
+        <!-- Consoles -->
+        <div id="console">
+            <h2>Console</h2>
+            <div id="console-output"></div>
+        </div>
+
+        <!-- Variables -->
+        <div id="variables">
+            <h2>Variables</h2>
+            <div id="variable-list"></div>
+        </div>
     </div>
+
+    <button id="execute-button">Execute</button>
+    <button id="step-button">Step</button>
+    <button id="breakpoint-button">Breakpoint</button>
 </body>
 
 </html>

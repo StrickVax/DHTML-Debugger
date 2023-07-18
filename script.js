@@ -18,13 +18,14 @@ function openTab(event, tabName) {
 
 window.onload = function () {
     document.getElementById('execute-button').onclick = function () {
-        var code = document.getElementById('code-input').value;
+        var html = document.getElementById('html-input').value;
 
+        // HTML code
         try {
-            eval(code);
+            document.getElementById('console-output').innerHTML = html;
         } catch (e) {
-            if (e instanceof SyntaxError) {
-                alert("f");
+            if (e) {
+                alert("An error has occured");
             }
         }
     };

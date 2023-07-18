@@ -8,4 +8,20 @@ textarea {
 button {
     background-color: beige;
     color: #1B121C;
+    font-weight: bold;
+    margin: .5%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+#console-output{
+    background-color: rgb(226, 229, 229);
+    border-style: groove;
+}
+
+#execute-button{
+    background-color: #229335;
+    color:rgb(198, 219, 184);
+    padding: 2%;
+    font-size: large;
 }

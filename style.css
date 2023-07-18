@@ -1,0 +1,11 @@
+textarea {
+    margin: 10px;
+    min-width: 35%;
+    max-width: 45%;
+    min-height: 15em;
+}
+
+button {
+    background-color: beige;
+    color: #1B121C;
+}

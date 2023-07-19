@@ -23,6 +23,13 @@ textarea {
     width: 50%;
 }
 
+iframe
+{
+    /* TODO: Change px to something more dynamic */
+    width:700px;
+    height: 400px;
+}
+
 button {
     background-color: beige;
     color: #1B121C;

@@ -1,8 +1,26 @@
 textarea {
     margin: 10px;
-    min-width: 35%;
-    max-width: 45%;
+    min-width: 65%;
+    max-width: 85%;
     min-height: 15em;
+}
+
+.tablinks.active {
+    background-color: #c4b1a1;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#code-editor {
+    width: 55%;
+}
+
+#console {
+    width: 50%;
 }
 
 button {
@@ -14,14 +32,14 @@ button {
     padding-right: 1%;
 }
 
-#console-output{
+#console-output {
     background-color: rgb(226, 229, 229);
     border-style: groove;
 }
 
-#execute-button{
+#execute-button {
     background-color: #229335;
-    color:rgb(198, 219, 184);
+    color: rgb(198, 219, 184);
     padding: 2%;
     font-size: large;
 }

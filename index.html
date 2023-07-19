@@ -8,48 +8,50 @@
 </head>
 
 <body>
-    <font face = "helvetica">
+    <font face="helvetica">
     <h1>HTML + Javascript Debugger</h1>
     <div id="container">
-        <!-- Editor -->
-        <div id="code-editor">
-            <h2>Code Editor</h2>
 
-            <!-- Tabs -->
-            <div class="Tabs">
-                <button class="tablinks" onclick="openTab(event, 'HTML')">HTML</button>
-                <button class="tablinks" onclick="openTab(event,'CSS')">CSS</button>
-                <button class="tablinks" onclick="openTab(event, 'JS')">Javascript</button>
+        <!-- Box Flex-->
+        <div class="flex-container">
+            <!-- Editor -->
+            <div id="code-editor">
+                <h2>Code Editor</h2>
+
+                <!-- Tabs -->
+                <div class="Tabs">
+                    <button class="tablinks" onclick="openTab(event, 'HTML')">HTML</button>
+                    <button class="tablinks" onclick="openTab(event,'CSS')">CSS</button>
+                    <button class="tablinks" onclick="openTab(event, 'JS')">Javascript</button>
+                </div>
+
+                <!-- Tab Content -->
+                <div id="HTML" class="tabContent">
+                    <h3 style="display: inline">HTML</h3>
+                    <div></div>
+                    <textarea id="html-input" rows="20" cols="50" placeholder="HTML"></textarea>
+                </div>
+
+                <div id="CSS" class="tabContent">
+                    <h3 style="display: inline">CSS</h3>
+                    <div></div>
+                    <textarea id="css-input" rows="20" cols="50" placeholder="CSS"></textarea>
+                </div>
+
+                <div id="JS" class="tabContent">
+                    <h3 style="display: inline">JavaScript</h3>
+                    <div></div>
+                    <textarea id="js-input" rows="20" cols="50" placeholder="JS"></textarea>
+                </div>
+            </div>
+            <!-- Consoles -->
+            <div id="console">
+                <h2>Console</h2>
+                <div id="console-output">
+                </div>
             </div>
 
-            <!-- Tab Content -->
-            <div id="HTML" class="tabContent">
-                <h3 style="display: inline">HTML</h3>
-                <div></div>
-                <textarea id="html-input" rows="20" cols="50" placeholder="HTML"></textarea>
-            </div>
-
-            <div id="CSS" class="tabContent">
-                <h3 style="display: inline">CSS</h3>
-                <div></div>
-                <textarea id="css-input" rows="20" cols="50" placeholder="CSS"></textarea>
-            </div>
-
-            <div id="JS" class="tabContent">
-                <h3 style="display: inline">JavaScript</h3>
-                <div></div>
-                <textarea id="js-input" rows="20" cols="50" placeholder="JS"></textarea>
-            </div>
         </div>
-
-        <!-- Output -->
-
-        <!-- Consoles -->
-        <div id="console">
-            <h2>Console</h2>
-            <div id="console-output"></div>
-        </div>
-
         <!-- Variables -->
         <div id="variables">
             <h2>Variables</h2>

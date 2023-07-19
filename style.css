@@ -1,7 +1,7 @@
 textarea {
     margin: 10px;
-    min-width: 65%;
-    max-width: 85%;
+    min-width: 95%;
+    max-width: 95%;
     min-height: 15em;
 }
 
@@ -31,8 +31,8 @@ textarea {
 
 iframe
 {   
-    height: 700px;
-    width: 600px;
+    height: 100%;
+    width: 100%;
 }
 
 button {

@@ -19,14 +19,18 @@ function openTab(event, tabName) {
 
 window.onload = function () {
     openTab(null, 'HTML');
+    document.getElementById('startup-tab').className += 'active';
+
     document.getElementById('execute-button').onclick = function () {
         var html = document.getElementById('html-input').value;
+        var css = document.getElementById('css-input').value;
 
         // HTML code
         try {
             var consoleOutput = document.getElementById('console-output').contentWindow.document;
             consoleOutput.open();
-            consoleOutput.write(html);
+            consoleOutput.write('<style>' + css + '</style>' + html);
+            
         } catch (e) {
             alert("An error has occured");
         }

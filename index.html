@@ -4,7 +4,6 @@
 <head>
     <title>Debugger</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 
 <body>
@@ -20,7 +19,7 @@
 
                 <!-- Tabs -->
                 <div class="Tabs">
-                    <button class="tablinks" onclick="openTab(event, 'HTML')">HTML</button>
+                    <button class="tablinks" id="startup-tab" onclick="openTab(event, 'HTML')">HTML</button>
                     <button class="tablinks" onclick="openTab(event,'CSS')">CSS</button>
                     <button class="tablinks" onclick="openTab(event, 'JS')">Javascript</button>
                 </div>
@@ -44,11 +43,17 @@
                     <textarea id="js-input" rows="20" cols="50" placeholder="JS"></textarea>
                 </div>
             </div>
+
             <!-- Consoles -->
             <div id="console">
                 <h2>Console</h2>
-                <iframe id="console-output"></iframe>
+                <div id="iframe-container">
+                    <iframe id="console-output" sandbox="allow-same-origin allow-scripts"></iframe>
+                </div>
             </div>
+            
+                
+            
 
         </div>
         <!-- Variables -->
@@ -62,6 +67,8 @@
     <button id="execute-button">Execute</button>
     <button id="step-button">Step</button>
     <button id="breakpoint-button">Breakpoint</button>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

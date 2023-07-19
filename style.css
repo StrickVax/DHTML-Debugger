@@ -16,18 +16,23 @@ textarea {
 }
 
 #code-editor {
-    width: 55%;
+    width: 50%;
 }
 
 #console {
     width: 50%;
 }
 
+#iframe-container {
+    background-color: #229335;
+    resize: both;
+    overflow: auto;
+}
+
 iframe
-{
-    /* TODO: Change px to something more dynamic */
-    width:700px;
-    height: 400px;
+{   
+    height: 700px;
+    width: 600px;
 }
 
 button {
@@ -40,8 +45,10 @@ button {
 }
 
 #console-output {
-    background-color: rgb(226, 229, 229);
+    background-color: rgb(235, 243, 243);
     border-style: groove;
+    resize: both;
+    overflow: auto;
 }
 
 #execute-button {

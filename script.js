@@ -13,20 +13,23 @@ function openTab(event, tabName) {
     }
 
     document.getElementById(tabName).style.display = 'block';
-    event.currentTarget.className += ' active';
+    if (event)
+        event.currentTarget.className += ' active';
 }
 
 window.onload = function () {
+    openTab(null, 'HTML');
     document.getElementById('execute-button').onclick = function () {
         var html = document.getElementById('html-input').value;
 
         // HTML code
         try {
-            document.getElementById('console-output').innerHTML = html;
+            var consoleOutput = document.getElementById('console-output').contentWindow.document;
+            consoleOutput.open();
+            consoleOutput.write(html);
         } catch (e) {
-            if (e) {
-                alert("An error has occured");
-            }
+            alert("An error has occured");
         }
+
     };
 };

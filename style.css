@@ -27,7 +27,19 @@ body {
 
 h1,
 h2 {
-    color: crimson;
+    color: var(--button-background-color);
+}
+
+#theme-toggle{
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+#theme-icon
+{
+    width: 2em;
+    height: auto;
+    padding: .2em;
 }
 
 textarea {

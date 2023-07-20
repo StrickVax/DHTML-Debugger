@@ -43,7 +43,7 @@ window.onload = function () {
         lineNumbers: true
     });
 
-    document.getElementById('get-content').onclick = function () {
+    document.getElementById('execute-button').onclick = function () {
         var consoleOutput = document.getElementById('console-output').contentWindow.document;
         consoleOutput.open();
         consoleOutput.write(htmlEditor.getValue());

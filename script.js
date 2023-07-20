@@ -52,7 +52,10 @@ window.onload = function () {
     document.getElementById('theme-toggle').onclick = function () {
         let currentTheme = document.documentElement.getAttribute('data-theme');
         let newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        let newIcon = newTheme === 'dark' ? 'moon.svg' : 'sun.svg';
+
         document.documentElement.setAttribute('data-theme', newTheme);
+        document.getElementById("theme-icon").setAttribute('src', newIcon);
     }
 
 };

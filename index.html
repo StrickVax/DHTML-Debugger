@@ -5,6 +5,7 @@
     <title>Debugger</title>
     <link rel="stylesheet" href="style.css">
 
+    <!-- CodeMirror -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/codemirror.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/codemirror.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/mode/xml/xml.min.js"></script>
@@ -16,7 +17,7 @@
 
 <body>
     <h1>HTML + Javascript Debugger</h1>
-    <button id="theme-toggle">Toggle Theme</button>
+    <button id="theme-toggle"><img id="theme-icon" src="sun.svg" alt="Toggle Theme Icon">Theme</button>
     <div id="container">
 
         <!-- Box Flex-->
@@ -35,8 +36,6 @@
                 <!-- Tab Content -->
                 <div id="HTML" class="tabContent">
                     <h3 style="display: inline">HTML</h3>
-                    <div></div>
-
                     <div id="html-input"></div>
                     <button id="get-content">Get Content</button>
                 </div>

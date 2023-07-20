@@ -21,6 +21,7 @@ window.onload = function () {
     openTab(null, 'HTML');
     document.getElementById('startup-tab').className += ' active';
 
+    // Execute Button
     document.getElementById('execute-button').onclick = function () {
         var html = document.getElementById('html-input').value;
         var css = document.getElementById('css-input').value;
@@ -36,4 +37,15 @@ window.onload = function () {
         }
 
     };
+
+    var htmlEditor = CodeMirror(document.getElementById("html-input"), {
+        mode: "htmlmixed",
+        lineNumbers: true
+    });
+
+    document.getElementById('get-content').onclick = function () {
+        var consoleOutput = document.getElementById('console-output').contentWindow.document;
+        consoleOutput.open();
+        consoleOutput.write(htmlEditor.getValue());
+    }
 };

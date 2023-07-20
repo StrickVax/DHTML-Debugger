@@ -4,10 +4,17 @@
 <head>
     <title>Debugger</title>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/codemirror.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/mode/xml/xml.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/mode/javascript/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/mode/css/css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/mode/htmlmixed/htmlmixed.min.js"></script>
+
 </head>
 
 <body>
-    <font face="helvetica">
     <h1>HTML + Javascript Debugger</h1>
     <div id="container">
 
@@ -28,7 +35,9 @@
                 <div id="HTML" class="tabContent">
                     <h3 style="display: inline">HTML</h3>
                     <div></div>
-                    <textarea id="html-input" rows="20" cols="50" placeholder="HTML"></textarea>
+
+                    <div id="html-input"></div>
+                    <button id="get-content">Get Content</button>
                 </div>
 
                 <div id="CSS" class="tabContent">
@@ -48,12 +57,9 @@
             <div id="console">
                 <h2>Console</h2>
                 <div id="iframe-container">
-                    <iframe id="console-output" sandbox="allow-same-origin allow-scripts"></iframe>
+                    <iframe id="console-output" sandbox="allow-same-origin"></iframe>
                 </div>
             </div>
-            
-                
-            
 
         </div>
         <!-- Variables -->

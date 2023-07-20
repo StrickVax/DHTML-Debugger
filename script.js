@@ -48,4 +48,11 @@ window.onload = function () {
         consoleOutput.open();
         consoleOutput.write(htmlEditor.getValue());
     }
+
+    document.getElementById('theme-toggle').onclick = function () {
+        let currentTheme = document.documentElement.getAttribute('data-theme');
+        let newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', newTheme);
+    }
+
 };

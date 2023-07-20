@@ -24,9 +24,11 @@ textarea {
 }
 
 #iframe-container {
+    height: 400px;
+    width: 600px;
     background-color: #229335;
     resize: both;
-    overflow: auto;
+    overflow: hidden;
 }
 
 iframe
